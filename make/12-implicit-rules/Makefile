@@ -1,3 +1,5 @@
+# make 对 C、C++ 友好
+# 预设了与 C、C++ 相关的变量
 CFLAGS = -g
 
 blah: blah.o
