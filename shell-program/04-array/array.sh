@@ -60,3 +60,10 @@ files3[0]=f1.csv
 files3[1]=f2.csv
 echo "files3 数组的长度为 ${#files3[@]}"
 
+# 多行数组
+files4=(
+	f1.jpg
+	f2.jpg
+)
+echo ${files4[*]}
+
