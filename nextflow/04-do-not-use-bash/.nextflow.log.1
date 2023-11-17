@@ -1,0 +1,56 @@
+Nov-17 16:26:25.077 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
+Nov-17 16:26:25.145 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.0
+Nov-17 16:26:25.161 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/a2htray/.nextflow/plugins; core-plugins: nf-amazon@2.1.4,nf-azure@1.3.2,nf-cloudcache@0.3.0,nf-codecommit@0.1.5,nf-console@1.0.6,nf-ga4gh@1.1.0,nf-google@1.8.3,nf-tower@1.6.3,nf-wave@1.0.0
+Nov-17 16:26:25.168 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Nov-17 16:26:25.169 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Nov-17 16:26:25.171 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Nov-17 16:26:25.178 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Nov-17 16:26:25.241 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Nov-17 16:26:25.260 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [tender_swirles] DSL2 - revision: 877dda1210
+Nov-17 16:26:25.261 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Nov-17 16:26:25.261 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Nov-17 16:26:25.274 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/a2htray/.nextflow/secrets/store.json
+Nov-17 16:26:25.279 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@72ed9aad] - activable => nextflow.secret.LocalSecretsProvider@72ed9aad
+Nov-17 16:26:25.341 [main] DEBUG nextflow.Session - Session UUID: ddeeb973-c31a-4627-b231-3b865493f6eb
+Nov-17 16:26:25.341 [main] DEBUG nextflow.Session - Run name: tender_swirles
+Nov-17 16:26:25.343 [main] DEBUG nextflow.Session - Executor pool size: 16
+Nov-17 16:26:25.349 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Nov-17 16:26:25.353 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Nov-17 16:26:25.382 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.10.0 build 5889
+  Created: 15-10-2023 15:07 UTC (23:07 CDT)
+  System: Linux 5.10.16.3-microsoft-standard-WSL2
+  Runtime: Groovy 3.0.19 on OpenJDK 64-Bit Server VM 11.0.20.1+1-post-Ubuntu-0ubuntu120.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 32240@RCNWHOR11435 [127.0.1.1]
+  CPUs: 16 - Mem: 12.3 GB (8.6 GB) - Swap: 4 GB (4 GB)
+Nov-17 16:26:25.415 [main] DEBUG nextflow.Session - Work-dir: /home/a2htray/tutorial-set/nextflow/04-do-not-use-bash/work [ext2/ext3]
+Nov-17 16:26:25.416 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/a2htray/tutorial-set/nextflow/04-do-not-use-bash/bin
+Nov-17 16:26:25.424 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Nov-17 16:26:25.435 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Nov-17 16:26:25.459 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Nov-17 16:26:25.467 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 17; maxThreads: 1000
+Nov-17 16:26:25.534 [main] DEBUG nextflow.Session - Session start
+Nov-17 16:26:25.957 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Nov-17 16:26:26.021 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Nov-17 16:26:26.021 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Nov-17 16:26:26.027 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Nov-17 16:26:26.033 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=16; memory=12.3 GB; capacity=16; pollInterval=100ms; dumpInterval=5m
+Nov-17 16:26:26.036 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Nov-17 16:26:26.165 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: pythonTask
+Nov-17 16:26:26.166 [main] DEBUG nextflow.Session - Igniting dataflow network (1)
+Nov-17 16:26:26.166 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > pythonTask
+Nov-17 16:26:26.167 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_cd9b1ad4fdd8e385: /home/a2htray/tutorial-set/nextflow/04-do-not-use-bash/main.nf
+Nov-17 16:26:26.167 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Nov-17 16:26:26.168 [main] DEBUG nextflow.Session - Session await
+Nov-17 16:26:26.299 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Nov-17 16:26:26.301 [Task submitter] INFO  nextflow.Session - [43/f95c67] Submitted process > pythonTask
+Nov-17 16:26:26.366 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: pythonTask; status: COMPLETED; exit: 0; error: -; workDir: /home/a2htray/tutorial-set/nextflow/04-do-not-use-bash/work/43/f95c673fdd81cc5e5ceab309617e31]
+Nov-17 16:26:26.373 [main] DEBUG nextflow.Session - Session await > all processes finished
+Nov-17 16:26:26.373 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Nov-17 16:26:26.374 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Nov-17 16:26:26.378 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=1; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=11ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Nov-17 16:26:26.589 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Nov-17 16:26:26.600 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Nov-17 16:26:26.600 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
