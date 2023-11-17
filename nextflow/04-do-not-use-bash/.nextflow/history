@@ -1,3 +1,0 @@
-2023-11-17 16:25:02	832ms	ecstatic_venter	OK	51df9b5596e8d10cd165ce0a0c614394	2146a69a-eb3c-477a-b0bb-91287b5f0f65	nextflow run main.nf
-2023-11-17 16:26:25	1.6s	tender_swirles	OK	877dda1210ddb187c968366d46806208	ddeeb973-c31a-4627-b231-3b865493f6eb	nextflow run main.nf
-2023-11-17 16:28:26	1.8s	pedantic_gutenberg	OK	8660eb016e9aa2fb44e196813c7b2e7e	d3964c15-a45a-45b3-8a34-e50fc5fa7bb1	nextflow run main.nf
