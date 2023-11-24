@@ -1,0 +1,41 @@
+// CSS 属性值 - 变量定义
+@bg-color: #25B3DB;
+@link-color: #A8DC9F;
+@font-color: #25DB8B;
+
+.card {
+	backgound-color: @bg-color;
+}
+
+a.link {
+	color: @link-color;
+}
+
+p {
+	color: @font-color;
+}
+
+// 选择器 - 变量定义
+@selector: card-title;
+
+.@{selector} {
+	color: @font-color;
+}
+
+// 属性 - 变量定义
+@property: color;
+
+span {
+	@{property}: @font-color;
+}
+
+// 变量名 - 变量定义
+@primary: green;
+@secondary: blue;
+
+.section {
+	// 申明了变量 color，其值为 primary
+	@color: primary;
+	// 使用 @@ 取 color 值对应的变量值
+	color: @@color;
+}
