@@ -1,10 +1,34 @@
 nav ul {
 	&:extend(.inline);
-	color: green;
+	background-color: green;
 }
 
 .inline {
 	color: red;
 }
 
+
+.a:extend(.b) {
+	color: blue;
+}
+
+//.a {
+//	&:extend(.b);
+//	color: blue;
+//}
+
+.b {
+	width: 100px;
+}
+
+
+.animal {
+	background-color: black;
+	color: white;
+}
+
+.bear {
+	&:extend(.animal);
+	background-color: brown;
+}
 

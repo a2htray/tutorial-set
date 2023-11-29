@@ -1,0 +1,40 @@
+
+// .my-mixin 选择器会出现在 CSS 中
+.my-mixin {
+	color: black;
+}
+
+.card {
+	.my-mixin();
+}
+
+// .my-mixin2 选择器不会出现在 CSS 中
+.my-mixin2() {
+	color: black;
+}
+
+.card2 {
+	.my-mixin2();
+}
+
+// mixin 中包含选择器
+.my-mixin3() {
+	&:hover {
+		border: 1px solid red;
+	}
+}
+
+.card3 {
+	.my-mixin3();
+}
+
+// 命名空间
+#sider() {
+	.title {
+		color: black;
+	}
+}
+
+.card4 {
+	#sider.title();
+}
