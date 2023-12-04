@@ -1,0 +1,31 @@
+// 合并功能允许将多个属性按指定的方式拼接到一个属性值中
+
+// 在属性名后加 + 符号，表示使用逗号拼接属性值
+.mixin() {
+	text-shadow+: 1px 1px 2px red;
+}
+
+.highlight {
+	.mixin();
+	text-shadow+: 0 0 1em blue;
+}
+
+// 在属性名后加 +_ 符号，表示使用空格拼接属性值
+.solid1px() {
+	border+_: 1px solid;
+}
+
+.content {
+	.solid1px();
+	border+_: red;
+}
+
+// less 会根据合并在原属性值前后改变拼接的顺序，如
+//
+// .mixin()
+// text-shadow
+// => .mixin() text-shadow
+// 
+// text-shadow
+// .mixin()
+// => text-shadow .mixin()

@@ -1,0 +1,37 @@
+.border-radius(@radius) {
+	border-radius: @radius;
+}
+
+.class1 {
+	.border-radius(4px);
+}
+
+.class2 {
+	.border-radius(5px);
+}
+
+// 设置默认参数
+.background-color(@color: red) {
+	background-color: @color;
+}
+
+.class3 {
+	.background-color();
+}
+
+// 命名参数
+.class4 {
+	.background-color(@color: blue);
+}
+
+// @arguments 变量
+.border-style(@x, @y, @color) {
+	border: @arguments;
+}
+
+.class5 {
+	.border-style(1px, solid, red);
+}
+
+// @rest 变量，实现可变长参数
+
